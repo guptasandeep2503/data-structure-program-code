@@ -8,7 +8,6 @@ struct stack
 void convert(char *);
 void push(struct stack *,char ch);
 char pop(struct stack *);
-int isoperand(char ch);
 int main()
 {
     char prefix[20];
