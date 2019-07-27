@@ -79,7 +79,7 @@ void convert(char infix[])
         {
             while(s.top!=-1)
             {
-                if(preced(ch)<=preced(s.arr[s.top]))
+                if(preced(ch)<preced(s.arr[s.top]))
                 {
                     prefix[j]=pop(&s);
                     j++;
