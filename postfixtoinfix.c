@@ -51,8 +51,11 @@ void convert(char postfix[])
         {
             infix[j]=ch;
             j++;
-            infix[j]=pop(&s);
-            j++;
+            if(s.top!=-1)
+            {
+                infix[j]=pop(&s);
+                j++;
+            }
         }
     }
     strrev(infix);
